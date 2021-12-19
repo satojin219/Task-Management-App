@@ -1,7 +1,7 @@
 <template>
       <button v-on:click="addSection()" type="button" class="m-3 btn btn-info text-white"><i class="fas fa-plus"></i> ADD SECTION</button>
 
-    <div  class="d-flex justify-content-start wrap">
+    <div  class="d-flex justify-content-start align-items-start wrap">
 
       <div v-for="(taskSectionItem,index) in taskSectionList" :key="taskSectionItem" class="col-12 card-width  m-3 bg-light p-2 shadow rounded">
         <input v-model="taskSectionItem.name" id="section-name" type="text" placeholder="Section Name">
@@ -65,16 +65,12 @@ export default {
 </script>
 
 <style>
-.plus:hover{
+.plus:hover + .trash:hover{
   background-color: #F2F2F2; 
   border-radius: 50%;
   opacity: 0.8;
 }
- .trash:hover{
-  background-color: #F2F2F2; 
-  border-radius: 50%;
-  opacity: 0.8;
-}
+
 button{
   background-color: transparent;
   border: none;
