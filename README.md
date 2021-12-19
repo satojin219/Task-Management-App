@@ -1,10 +1,12 @@
 # task-managaement-app
 
+## URL
+https://satojin219.github.io/Task-Management-App/
+
 ## Project setup
 ```
 npm install
 ```
-##URL
 
 ### Compiles and hot-reloads for development
 ```
